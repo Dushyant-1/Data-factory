@@ -39,6 +39,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ProductsTable'"
 		},
+		"ProductBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ProductBlobStorage3'"
+		},
 		"AdvWorksdb_properties_typeProperties_server": {
 			"type": "string",
 			"defaultValue": "newserver123.database.windows.net"
@@ -137,6 +141,9 @@
 					},
 					"ProductsTable_connectionString": {
 						"value": "[parameters('ProductsTable_connectionString')]"
+					},
+					"ProductBlobStorage3_connectionString": {
+						"value": "[parameters('ProductBlobStorage3_connectionString')]"
 					},
 					"AdvWorksdb_properties_typeProperties_server": {
 						"value": "[parameters('AdvWorksdb_properties_typeProperties_server')]"

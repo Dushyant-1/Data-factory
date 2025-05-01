@@ -29,6 +29,9 @@
 		"ProductsTable_connectionString": {
 			"value": ""
 		},
+		"ProductBlobStorage3_connectionString": {
+			"value": ""
+		},
 		"AdvWorksdb_properties_typeProperties_server": {
 			"value": "newserver123.database.windows.net"
 		},
