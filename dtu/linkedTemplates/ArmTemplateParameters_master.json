@@ -1,0 +1,75 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "dtu"
+		},
+		"AdvWorksdb_password": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"CustomerBlob_connectionString": {
+			"value": ""
+		},
+		"CustomerTable_password": {
+			"value": ""
+		},
+		"ProductsTable_connectionString": {
+			"value": ""
+		},
+		"AdvWorksdb_properties_typeProperties_server": {
+			"value": "newserver123.database.windows.net"
+		},
+		"AdvWorksdb_properties_typeProperties_database": {
+			"value": "newsql1"
+		},
+		"AdvWorksdb_properties_typeProperties_userName": {
+			"value": "dushyant"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "uniquename123.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "sql123hash"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "dushyant"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "newserver123.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "newsql1"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "dushyant"
+		},
+		"CustomerTable_properties_typeProperties_server": {
+			"value": "newserver123.database.windows.net"
+		},
+		"CustomerTable_properties_typeProperties_database": {
+			"value": "newsql1"
+		},
+		"CustomerTable_properties_typeProperties_userName": {
+			"value": "dushyant"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
