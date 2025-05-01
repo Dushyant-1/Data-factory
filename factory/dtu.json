@@ -1,0 +1,9 @@
+{
+	"name": "dtu",
+	"location": "eastus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5064b502-571b-4aac-a98d-ac0d61edd3c4",
+		"tenantId": "c6deabb2-d214-4e9d-89f2-4013cd97071f"
+	}
+}
