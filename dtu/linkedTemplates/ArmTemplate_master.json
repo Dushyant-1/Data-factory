@@ -35,13 +35,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'CustomerTable'"
 		},
-		"ProductsTable_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'ProductsTable'"
-		},
 		"ProductBlobStorage3_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ProductBlobStorage3'"
+		},
+		"ProductsTable_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ProductsTable'"
 		},
 		"AdvWorksdb_properties_typeProperties_server": {
 			"type": "string",
@@ -139,11 +139,11 @@
 					"CustomerTable_password": {
 						"value": "[parameters('CustomerTable_password')]"
 					},
-					"ProductsTable_connectionString": {
-						"value": "[parameters('ProductsTable_connectionString')]"
-					},
 					"ProductBlobStorage3_connectionString": {
 						"value": "[parameters('ProductBlobStorage3_connectionString')]"
+					},
+					"ProductsTable_connectionString": {
+						"value": "[parameters('ProductsTable_connectionString')]"
 					},
 					"AdvWorksdb_properties_typeProperties_server": {
 						"value": "[parameters('AdvWorksdb_properties_typeProperties_server')]"

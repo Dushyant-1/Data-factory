@@ -26,10 +26,10 @@
 		"CustomerTable_password": {
 			"value": ""
 		},
-		"ProductsTable_connectionString": {
+		"ProductBlobStorage3_connectionString": {
 			"value": ""
 		},
-		"ProductBlobStorage3_connectionString": {
+		"ProductsTable_connectionString": {
 			"value": ""
 		},
 		"AdvWorksdb_properties_typeProperties_server": {
