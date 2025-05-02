@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "dtu"
 		},
+		"ADLSGen2_accountKey": {
+			"value": ""
+		},
 		"AdvWorksdb_password": {
 			"value": ""
 		},
@@ -31,6 +34,9 @@
 		},
 		"ProductsTable_connectionString": {
 			"value": ""
+		},
+		"ADLSGen2_properties_typeProperties_url": {
+			"value": "https://adls3290.dfs.core.windows.net/"
 		},
 		"AdvWorksdb_properties_typeProperties_server": {
 			"value": "newserver123.database.windows.net"
