@@ -8,6 +8,9 @@
 		"ADLSGen2_accountKey": {
 			"value": ""
 		},
+		"ADLSLinkedService_accountKey": {
+			"value": ""
+		},
 		"AdvWorksdb_password": {
 			"value": ""
 		},
@@ -35,22 +38,22 @@
 		"ProductsTable_connectionString": {
 			"value": ""
 		},
-		"TaxiTripDB_password": {
-			"value": ""
-		},
 		"TaxiDb_password": {
 			"value": ""
 		},
-		"ADLSLinkedService_accountKey": {
-			"value": ""
-		},
-		"TripFareCsv_password": {
+		"TaxiTripDB_password": {
 			"value": ""
 		},
 		"TripAggregateBlobStorage3_connectionString": {
 			"value": ""
 		},
+		"TripFareCsv_password": {
+			"value": ""
+		},
 		"ADLSGen2_properties_typeProperties_url": {
+			"value": "https://adls3290.dfs.core.windows.net/"
+		},
+		"ADLSLinkedService_properties_typeProperties_url": {
 			"value": "https://adls3290.dfs.core.windows.net/"
 		},
 		"AdvWorksdb_properties_typeProperties_server": {
@@ -89,15 +92,6 @@
 		"CustomerTable_properties_typeProperties_userName": {
 			"value": "dushyant"
 		},
-		"TaxiTripDB_properties_typeProperties_server": {
-			"value": "newserver123.database.windows.net"
-		},
-		"TaxiTripDB_properties_typeProperties_database": {
-			"value": "taxi-data"
-		},
-		"TaxiTripDB_properties_typeProperties_userName": {
-			"value": "dushyant"
-		},
 		"TaxiDb_properties_typeProperties_server": {
 			"value": "taxi-server.database.windows.net"
 		},
@@ -107,8 +101,14 @@
 		"TaxiDb_properties_typeProperties_userName": {
 			"value": "dushyant"
 		},
-		"ADLSLinkedService_properties_typeProperties_url": {
-			"value": "https://adls3290.dfs.core.windows.net/"
+		"TaxiTripDB_properties_typeProperties_server": {
+			"value": "newserver123.database.windows.net"
+		},
+		"TaxiTripDB_properties_typeProperties_database": {
+			"value": "taxi-data"
+		},
+		"TaxiTripDB_properties_typeProperties_userName": {
+			"value": "dushyant"
 		},
 		"TripFareCsv_properties_typeProperties_server": {
 			"value": "taxi-server.database.windows.net"
