@@ -1,0 +1,17 @@
+{
+	"name": "TripFareCsv",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "taxi-server.database.windows.net",
+			"database": "taxi-load",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "dushyant",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDgyRjQ1M0IzLTkwNjAtNDIzNy1CRTczLTdERUYyRjRBMjBFMV9hZGU1Y2ZkMy0wZjIxLTQ5ODEtODU4MS0xZWY0MTJjYzVlZTYiDQp9"
+		}
+	}
+}
