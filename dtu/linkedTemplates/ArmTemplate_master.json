@@ -47,6 +47,18 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ProductsTable'"
 		},
+		"TaxiTripDB_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'TaxiTripDB'"
+		},
+		"TaxiDb_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'TaxiDb'"
+		},
+		"ADLSLinkedService_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ADLSLinkedService'"
+		},
 		"ADLSGen2_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adls3290.dfs.core.windows.net/"
@@ -98,6 +110,34 @@
 		"CustomerTable_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "dushyant"
+		},
+		"TaxiTripDB_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "newserver123.database.windows.net"
+		},
+		"TaxiTripDB_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "taxi-data"
+		},
+		"TaxiTripDB_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "dushyant"
+		},
+		"TaxiDb_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "taxi-server.database.windows.net"
+		},
+		"TaxiDb_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "taxi-data"
+		},
+		"TaxiDb_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "dushyant"
+		},
+		"ADLSLinkedService_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adls3290.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -156,6 +196,15 @@
 					"ProductsTable_connectionString": {
 						"value": "[parameters('ProductsTable_connectionString')]"
 					},
+					"TaxiTripDB_password": {
+						"value": "[parameters('TaxiTripDB_password')]"
+					},
+					"TaxiDb_password": {
+						"value": "[parameters('TaxiDb_password')]"
+					},
+					"ADLSLinkedService_accountKey": {
+						"value": "[parameters('ADLSLinkedService_accountKey')]"
+					},
 					"ADLSGen2_properties_typeProperties_url": {
 						"value": "[parameters('ADLSGen2_properties_typeProperties_url')]"
 					},
@@ -194,6 +243,27 @@
 					},
 					"CustomerTable_properties_typeProperties_userName": {
 						"value": "[parameters('CustomerTable_properties_typeProperties_userName')]"
+					},
+					"TaxiTripDB_properties_typeProperties_server": {
+						"value": "[parameters('TaxiTripDB_properties_typeProperties_server')]"
+					},
+					"TaxiTripDB_properties_typeProperties_database": {
+						"value": "[parameters('TaxiTripDB_properties_typeProperties_database')]"
+					},
+					"TaxiTripDB_properties_typeProperties_userName": {
+						"value": "[parameters('TaxiTripDB_properties_typeProperties_userName')]"
+					},
+					"TaxiDb_properties_typeProperties_server": {
+						"value": "[parameters('TaxiDb_properties_typeProperties_server')]"
+					},
+					"TaxiDb_properties_typeProperties_database": {
+						"value": "[parameters('TaxiDb_properties_typeProperties_database')]"
+					},
+					"TaxiDb_properties_typeProperties_userName": {
+						"value": "[parameters('TaxiDb_properties_typeProperties_userName')]"
+					},
+					"ADLSLinkedService_properties_typeProperties_url": {
+						"value": "[parameters('ADLSLinkedService_properties_typeProperties_url')]"
 					}
 				}
 			},
