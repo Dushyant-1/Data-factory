@@ -1,0 +1,65 @@
+{
+	"name": "DfTripData",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "TripDataCsv",
+						"type": "DatasetReference"
+					},
+					"name": "TripDataCsv"
+				},
+				{
+					"dataset": {
+						"referenceName": "TripFareCsv",
+						"type": "DatasetReference"
+					},
+					"name": "TripFaresTable"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "joinTrip"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          movie as string,",
+				"          title as string,",
+				"          genres as string,",
+				"          year as string,",
+				"          Rating as string,",
+				"          {Rotton Tomato} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> TripDataCsv",
+				"source(output(",
+				"          medallion as string,",
+				"          hack_license as string,",
+				"          vendor_id as string,",
+				"          pickup_datetime as string,",
+				"          payment_type as string,",
+				"          fare_amount as string,",
+				"          surcharge as string,",
+				"          mta_tax as string,",
+				"          tip_amount as string,",
+				"          tolls_amount as string,",
+				"          total_amount as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> TripFaresTable",
+				"TripDataCsv join(ERROR_FUNCTION('') == ERROR_FUNCTION(''),",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> joinTrip"
+			]
+		}
+	}
+}
