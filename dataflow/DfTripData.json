@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "TripDataCsv",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					},
 					"name": "TripDataCsv"
@@ -27,16 +27,25 @@
 			],
 			"scriptLines": [
 				"source(output(",
-				"          movie as string,",
-				"          title as string,",
-				"          genres as string,",
-				"          year as string,",
-				"          Rating as string,",
-				"          {Rotton Tomato} as string",
+				"          medallion as string,",
+				"          hack_license as string,",
+				"          vendor_id as string,",
+				"          rate_code as string,",
+				"          store_and_fwd_flag as string,",
+				"          pickup_datetime as string,",
+				"          dropoff_datetime as string,",
+				"          passenger_count as string,",
+				"          trip_time_in_secs as string,",
+				"          trip_distance as string,",
+				"          pickup_longitude as string,",
+				"          pickup_latitude as string,",
+				"          dropoff_longitude as string,",
+				"          dropoff_latitude as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> TripDataCsv",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> TripDataCsv",
 				"source(output(",
 				"          medallion as string,",
 				"          hack_license as string,",
