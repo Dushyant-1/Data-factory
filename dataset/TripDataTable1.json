@@ -1,5 +1,5 @@
 {
-	"name": "TripDataTable",
+	"name": "TripDataTable1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "TaxiDb",
