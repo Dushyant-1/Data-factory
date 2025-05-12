@@ -43,6 +43,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'CustomerTable'"
 		},
+		"FlipkartBlob_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'FlipkartBlob'"
+		},
 		"ProductBlobStorage3_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'ProductBlobStorage3'"
@@ -66,6 +70,10 @@
 		"TripFareCsv_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'TripFareCsv'"
+		},
+		"AzureBlobStorage3_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage3'"
 		},
 		"ADLSGen2_properties_typeProperties_url": {
 			"type": "string",
@@ -213,6 +221,9 @@
 					"CustomerTable_password": {
 						"value": "[parameters('CustomerTable_password')]"
 					},
+					"FlipkartBlob_connectionString": {
+						"value": "[parameters('FlipkartBlob_connectionString')]"
+					},
 					"ProductBlobStorage3_connectionString": {
 						"value": "[parameters('ProductBlobStorage3_connectionString')]"
 					},
@@ -230,6 +241,9 @@
 					},
 					"TripFareCsv_password": {
 						"value": "[parameters('TripFareCsv_password')]"
+					},
+					"AzureBlobStorage3_connectionString": {
+						"value": "[parameters('AzureBlobStorage3_connectionString')]"
 					},
 					"ADLSGen2_properties_typeProperties_url": {
 						"value": "[parameters('ADLSGen2_properties_typeProperties_url')]"
@@ -322,6 +336,26 @@
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Resources/deployments', 'dtu_ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "dtu_ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'dtu_ArmTemplate_1')]"
 			]
 		}
 	]

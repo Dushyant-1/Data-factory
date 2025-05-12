@@ -32,6 +32,9 @@
 		"CustomerTable_password": {
 			"value": ""
 		},
+		"FlipkartBlob_connectionString": {
+			"value": ""
+		},
 		"ProductBlobStorage3_connectionString": {
 			"value": ""
 		},
@@ -48,6 +51,9 @@
 			"value": ""
 		},
 		"TripFareCsv_password": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
 			"value": ""
 		},
 		"ADLSGen2_properties_typeProperties_url": {
